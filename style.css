@@ -16,6 +16,7 @@ body {
     width: 720px;
     height:450px;
     display: flex;
+    flex-direction: row;
     border-radius: 2%;
     margin: 0 auto;
     justify-content: center;
@@ -27,6 +28,14 @@ body {
     flex-direction: column;
     font-size: 14px;
     padding: 2% 6% 2% 6%;
+}
+
+#img1 {
+    display: block;
+}
+
+#img2 {
+    display: none;
 }
 
 img {
@@ -70,7 +79,7 @@ h4 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-right: 35px;
+    padding-right: 30%;
     margin: 20px 0px 20px 0px;
 }
 
@@ -82,7 +91,7 @@ h5 {
 
 button {
     font-weight: 700;
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,4 +111,73 @@ svg {
 
 button:hover {
     background-color: hsl(157, 38%, 23%);
+}
+
+@media screen and (max-width: 500px) {
+    #img1 {
+        display: none;
+    }
+
+    #img2 {
+        display: block;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0.5rem
+    }
+
+    .container {
+        display: flex;
+        width: 93.75%;
+        height: 600px;
+        flex-direction: column;
+        margin: 0;
+        border-radius: 2% 2% 2% 2%;
+    }
+
+    .text-container {
+        justify-content: center;
+        height: 60%;
+        width: 100%;
+        padding: 3% 0% 3% 0%;
+    }
+
+    img {
+        height: 40%;
+        width: 100%;
+        padding: 0;
+        border-radius: 2% 2% 0% 0%;
+    }
+    
+    h1, h2, h3, .prices{
+        padding: 2% 10% 2% 10%;
+        margin: 2% 0% 2% 0%;
+    }
+
+    h2 {
+        word-spacing: normal;
+        font-size: 27.5px;
+    }
+    
+    h3 {
+        font-size: 13px;
+    }
+
+    .prices {
+        padding-right: 25%;
+    }
+
+    h4 {
+        font-size: 32px;
+    }
+
+    button {
+        margin-top: 5%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
