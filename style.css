@@ -135,7 +135,7 @@ button:hover {
         height: 600px;
         flex-direction: column;
         margin: 0;
-        border-radius: 2% 2% 2% 2%;
+        border-radius: 4%;
     }
 
     .text-container {
@@ -149,7 +149,7 @@ button:hover {
         height: 40%;
         width: 100%;
         padding: 0;
-        border-radius: 2% 2% 0% 0%;
+        border-radius: 4% 4% 0% 0%;
     }
     
     h1, h2, h3, .prices{
